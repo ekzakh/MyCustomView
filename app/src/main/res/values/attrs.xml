@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="WatchView">
+        <attr name="mainColor" format="color"/>
+        <attr name="arrowsColor" format="color"/>
+        <attr name="digitsColor" format="color"/>
+        <attr name="borderColor" format="color"/>
+    </declare-styleable>
+    
+    <attr name="watchStyle" format="reference"/>
+</resources>
