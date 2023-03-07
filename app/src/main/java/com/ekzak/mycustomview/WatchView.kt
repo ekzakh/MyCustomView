@@ -106,7 +106,7 @@ class WatchView constructor(
 
         centerPoint.x = saveWidth / 2
         centerPoint.y = saveHeight / 2
-        
+
         saveArea.left = paddingLeft.toFloat()
         saveArea.right = saveArea.left + saveWidth
         saveArea.top = paddingTop.toFloat()
