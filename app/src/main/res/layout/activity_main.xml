@@ -8,12 +8,10 @@
 
     <com.ekzak.mycustomview.WatchView
         android:id="@+id/watch"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
+        app:layout_constraintTop_toTopOf="parent"
+        app:mainColor="@color/purple_200" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

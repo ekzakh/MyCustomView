@@ -1,17 +1,20 @@
 package com.ekzak.mycustomview
 
-import java.sql.Time
+import java.util.*
 
-typealias OnFieldChangedListener = (field: WatchTimeField) -> Unit
+class WatchTimeField(@JvmField var time: Date) {
+    private val calendar = Calendar.getInstance()
 
-class WatchTimeField(val time: Time) {
-
-    var listeners = mutableSetOf<OnFieldChangedListener>()
-
-    set(value) {
-        if (value != time) {
-            field = value
-            listeners.forEach { it.invoke(this) }
-        }
+    fun setTime(value: Date) {
+        time = value
+        calendar.time = value
     }
+
+    val hour
+        get() = calendar.get(Calendar.HOUR)
+    val minute
+        get() = calendar.get(Calendar.MINUTE)
+    val seconds
+        get() = calendar.get(Calendar.SECOND)
+
 }

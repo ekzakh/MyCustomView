@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">MyCustomView</string>
+    <string name="view_coroutine_scope">viewCoroutineScope</string>
 </resources>
